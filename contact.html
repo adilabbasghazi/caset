@@ -70,38 +70,115 @@
             </div>
          </header>
       <!-- end header -->
+<style>
+/* ===========================
+   ====== Search Box ====== 
+   =========================== */
 
+.search
+{
+	border: 2px solid #CF5C3F;
+	overflow: auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.search input[type="text"]
+{
+	border: 0px;
+	width: 67%;
+	padding: 10px 10px;
+}
+
+.search input[type="text"]:focus
+{
+	outline: 0;
+}
+
+.search input[type="submit"]
+{
+	border: 0px;
+	background: none;
+	background-color: #CF5C3F;
+	color: #fff;
+	float: right;
+	padding: 10px;
+	border-radius-top-right: 5px;
+	-moz-border-radius-top-right: 5px;
+	-webkit-border-radius-top-right: 5px;
+	border-radius-bottom-right: 5px;
+	-moz-border-radius-bottom-right: 5px;
+	-webkit-border-radius-bottom-right: 5px;
+        cursor:pointer;
+}
+
+/* ===========================
+   ====== Medua Query for Search Box ====== 
+   =========================== */
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	{}
+	.search
+	{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+}
+table {
+margin-top:15px;
+padding:5px;
+border:1px solid #ed242e;
+width:100%;
+}
+th {
+padding:5px;
+border:1px solid #ed242e;
+background-color:#ed242e;
+color:white;
+text-align:center;
+}
+td {
+padding:5px;
+border:1px solid #ed242e;
+color:black;
+text-align:center;
+}
+</style>
       <!-- contact -->
-     <div class="contact">
-         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                     <div class="titlepage text_align_left">
-                        <h2>Contact Us</h2>
-                     </div>
-                  </div>
-            </div>
-            <div class="row">
-               <div class="col-md-6">
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Full Name" type="type" name=" Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone" type="type" name="Phone Number">                          
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name"></textarea>
-                        </div>
-                        <div class="col-md-12">
-                           <button class="send_btn">Send Now</button>
-                        </div>
-                     </div>
-                  </form>
+ <div class="contact">
+ <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+  <div class="titlepage text_align_left">
+  <h2>Search for vaccine records</h2>
+   </div>
+    </div>
+     </div>
+    <div class="row">
+    <div class="col-md-12">
+    <form id="request" class="main_form">
+     <div class="search">
+	<form class="search-form">
+	<input type="text" placeholder="Enter registered mobile no.">
+	<input type="submit"  value="Search">
+	</form>
+	</div>   
+						<table>
+			<tr>
+				<th>Name</th>
+				<th>Roll</th>		
+				<th>Stream</th>  
+			</tr>
+			<tr>
+				<td>Adil Abbas Ghazi</td>
+				<td>11</td>		
+				<td>BCA</td>   
+
+			</tr>
+					</table>
                </div>
                 
             </div>
